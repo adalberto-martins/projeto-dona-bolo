@@ -1,2 +1,21 @@
 @charset "UTF-8";
 
+/* Versão Mobile First */ 
+
+:root {
+    --corPrincipal:#6F4E37;
+    --corDestaque:#FFD700;
+    --corFundo:#FDF5E6;
+    --verdeMenta:#98FB98;
+    --verdeVibrante:#55F501;
+    --vermelhoCereja:#ff0000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
