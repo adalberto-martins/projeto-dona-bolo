@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bolos Artesanais</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-title">O sabor da tradição, feito com paixão</h1>
+        <p class="hero-subtitle">
+          Feitos com ingredientes selecionados e amor em cada detalhe.
+        </p>
+
+        <button class="btn-primary" data-scroll="#sabores">
+          Faça seu Pedido Agora!
+        </button>
+      </div>
+
+      <div class="hero-photo">
+        <!-- Troque pelo seu arquivo de imagem -->
+        <div class="hero-img" style="background-image: url('bolo-hero.jpg');"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SABORES CLÁSSICOS -->
+    <section class="section section-light" id="sabores">
+      <div class="section-inner">
+        <h2 class="section-title">Nossos Sabores Clássicos</h2>
+
+        <div class="cards-produtos">
+          <!-- Card 1 -->
+          <article class="produto-card">
+            <div class="produto-img">
+              <img src="bolo-chocolate.jpg" alt="Bolo de Chocolate" />
+            </div>
+            <h3 class="produto-nome">Bolo de Chocolate</h3>
+            <p class="produto-desc">
+              Chocolate 70% com toque de baunilha e textura super cremosa.
+            </p>
+            <p class="produto-preco">R$ 75</p>
+            <button class="btn-ghost">Ver detalhes</button>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="produto-card">
+            <div class="produto-img">
+              <img src="bolo-red-velvet.jpg" alt="Red Velvet" />
+            </div>
+            <h3 class="produto-nome">Red Velvet</h3>
+            <p class="produto-desc">
+              Massa aveludada e recheio cremoso de cream cheese.
+            </p>
+            <p class="produto-preco">R$ 60</p>
+            <button class="btn-ghost">Ver detalhes</button>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="produto-card">
+            <div class="produto-img">
+              <img src="bolo-cenoura.jpg" alt="Cenoura com Brigadeiro" />
+            </div>
+            <h3 class="produto-nome">Cenoura com Brigadeiro</h3>
+            <p class="produto-desc">
+              Clássico de cenoura com recheio generoso de brigadeiro.
+            </p>
+            <p class="produto-preco">R$ 70</p>
+            <button class="btn-ghost">Ver detalhes</button>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="produto-card">
+            <div class="produto-img">
+              <img src="bolo-limao.jpg" alt="Limão Siciliano" />
+            </div>
+            <h3 class="produto-nome">Limão Siciliano</h3>
+            <p class="produto-desc">
+              Bolo leve, cítrico e refrescante com creme de limão.
+            </p>
+            <p class="produto-preco">R$ 85</p>
+            <button class="btn-ghost">Ver detalhes</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUE NOSSOS BOLOS -->
+    <section class="section section-plain" id="valor">
+      <div class="section-inner">
+        <h2 class="section-title">Por que Nossos Bolos?</h2>
+
+        <div class="valor-grid">
+          <article class="valor-item">
+            <div class="valor-icon">🌱</div>
+            <h3>Ingredientes selecionados</h3>
+            <p>
+              Escolhemos insumos de qualidade para garantir sabor e frescor em cada fatia.
+            </p>
+          </article>
+
+          <article class="valor-item">
+            <div class="valor-icon">🧁</div>
+            <h3>Preparo artesanal</h3>
+            <p>
+              Cada receita é feita à mão, em pequena escala, com atenção aos detalhes.
+            </p>
+          </article>
+
+          <article class="valor-item">
+            <div class="valor-icon">🤎</div>
+            <h3>Atendimento diferenciado</h3>
+            <p>
+              Personalizamos sabores, tamanhos e acabamentos para o seu momento especial.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section section-light" id="depoimentos">
+      <div class="section-inner">
+        <h2 class="section-title">O que Nossos Clientes Dizem</h2>
+
+        <div class="depo-grid">
+          <article class="depo-card">
+            <div class="depo-topo">
+              <div class="depo-avatar">
+                <img src="cliente1.jpg" alt="Cliente Mariana" />
+              </div>
+              <div>
+                <h3>Mariana</h3>
+              </div>
+            </div>
+            <p class="depo-texto">
+              “Bolo incrível! Todo mundo na festa perguntou onde eu comprei.”
+            </p>
+          </article>
+
+          <article class="depo-card">
+            <div class="depo-topo">
+              <div class="depo-avatar">
+                <img src="cliente2.jpg" alt="Cliente João" />
+              </div>
+              <div>
+                <h3>João</h3>
+              </div>
+            </div>
+            <p class="depo-texto">
+              “Textura perfeita e sabor equilibrado. Já virou tradição aqui em casa.”
+            </p>
+          </article>
+
+          <article class="depo-card">
+            <div class="depo-topo">
+              <div class="depo-avatar">
+                <img src="cliente3.jpg" alt="Cliente Ana" />
+              </div>
+              <div>
+                <h3>Ana</h3>
+              </div>
+            </div>
+            <p class="depo-texto">
+              “Além de lindo, o bolo estava maravilhoso. Super recomendo!”
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
