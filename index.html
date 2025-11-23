@@ -1,21 +1,181 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos Artesanais</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/mediaquery.css">
-    <title>Dona Bolo | Home</title>
+    <link rel="stylesheet" href="assets/css/media-query.css">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
 
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <div class="logo-icon">BA</div>
+                <h1>Bolos Artesanais</h1>
+            </div>
+
+            <nav class="menu" id="menu">
+                <a href="#inicio">Início</a>
+                <a href="#sabores">Sabores</a>
+                <a href="#valor">Por que nós?</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+        </div>
     </header>
-    <main>
 
-    </main>
-    <footer>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h2>O sabor da tradição, feito com paixão.</h2>
+                <p>
+                    Bolos artesanais preparados com ingredientes selecionados e carinho em cada detalhe.
+                </p>
 
-    </footer>    
+                <div class="hero-btns">
+                    <a href="#sabores" class="btn btn-primary">Faça seu Pedido Agora!</a>
+                    <a href="#depoimentos" class="btn btn-outline">O que dizem os clientes</a>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="mockup-hero.jpg" alt="Bolo artesanal">
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="produtos" id="sabores">
+        <div class="container">
+            <h2 class="section-title">Nossos Sabores Clássicos</h2>
+
+            <div class="produtos-grid">
+
+                <div class="produto-card">
+                    <img src="bolo-chocolate.jpg" alt="">
+                    <h3>Bolo de Chocolate Belga</h3>
+                    <p>Massa de cacau 70% com toque de baunilha.</p>
+                    <span class="preco">R$ 75</span>
+                    <a href="#" class="btn-produto">Pedir</a>
+                </div>
+
+                <div class="produto-card">
+                    <img src="bolo-red-velvet.jpg" alt="">
+                    <h3>Red Velvet</h3>
+                    <p>Clássico recheio cremoso de cream cheese.</p>
+                    <span class="preco">R$ 80</span>
+                    <a href="#" class="btn-produto">Pedir</a>
+                </div>
+
+                <div class="produto-card">
+                    <img src="bolo-cenoura.jpg" alt="">
+                    <h3>Cenoura com Brigadeiro</h3>
+                    <p>Massa fofinha com brigadeiro gourmet.</p>
+                    <span class="preco">R$ 70</span>
+                    <a href="#" class="btn-produto">Pedir</a>
+                </div>
+
+                <div class="produto-card">
+                    <img src="bolo-limao.jpg" alt="">
+                    <h3>Limão Siciliano</h3>
+                    <p>Gosto suave e refrescante, com creme cítrico.</p>
+                    <span class="preco">R$ 85</span>
+                    <a href="#" class="btn-produto">Pedir</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VALOR -->
+    <section class="valor" id="valor">
+        <div class="container">
+            <h2 class="section-title">Por que Nossos Bolos?</h2>
+
+            <div class="valor-grid">
+                <div class="valor-item">
+                    <div class="icon">🍫</div>
+                    <h3>Ingredientes selecionados</h3>
+                    <p>Utilizamos produtos nobres e frescos.</p>
+                </div>
+
+                <div class="valor-item">
+                    <div class="icon">🧁</div>
+                    <h3>Preparo artesanal</h3>
+                    <p>Cada bolo é feito com técnica e carinho.</p>
+                </div>
+
+                <div class="valor-item">
+                    <div class="icon">🤎</div>
+                    <h3>Atendimento diferenciado</h3>
+                    <p>Personalização total e atenção aos detalhes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <h2 class="section-title">O que Nossos Clientes Dizem</h2>
+
+            <div class="depo-grid">
+
+                <div class="depo-card">
+                    <img src="cliente1.jpg" class="avatar">
+                    <h3>Mariana</h3>
+                    <p>"Bolo perfeito! Todo mundo amou!"</p>
+                </div>
+
+                <div class="depo-card">
+                    <img src="cliente2.jpg" class="avatar">
+                    <h3>João</h3>
+                    <p>"Entrega impecável e sabor maravilhoso."</p>
+                </div>
+
+                <div class="depo-card">
+                    <img src="cliente3.jpg" class="avatar">
+                    <h3>Ana Paula</h3>
+                    <p>"Fez o maior sucesso no evento."</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contato">
+        <div class="container footer-grid">
+            <div>
+                <h3>Contato</h3>
+                <p>WhatsApp: (99) 99999-9999</p>
+                <p>Email: contato@bolosartesanais.com</p>
+            </div>
+
+            <div>
+                <h3>Horário</h3>
+                <p>Seg a Sex: 9h às 18h</p>
+                <p>Sábado: 9h às 13h</p>
+            </div>
+        </div>
+
+        <p class="rodape-final">Um projeto by AM Digital - Soluções Personalizadas</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
