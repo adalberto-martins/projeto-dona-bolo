@@ -11,7 +11,11 @@ Desktop: 992 até 1200px
 Grandes telas: acima de 1200px
 */
 
-@charset "UTF-8";
+@media (max-width: 768px) {
+    .logo-header {
+        width: 140px; /* menor em celulares */
+    }
+}
 
 /* BREAKPOINT MOBILE / TABLET ATÉ 900px */
 @media screen and (max-width: 900px) {
