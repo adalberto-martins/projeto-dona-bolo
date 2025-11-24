@@ -47,23 +47,10 @@ body {
     padding: 15px 0;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-icon {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #d7825b;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Playfair Display";
-    font-weight: bold;
+.logo-header {
+    width: 180px;   /* tamanho ideal para header */
+    height: auto;
+    display: block;
 }
 
 .menu {
