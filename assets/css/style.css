@@ -221,6 +221,10 @@ a:hover {
     font-weight: 600;
 }
 
+a.btn-produto {
+    margin-top: 25px;
+}
+
 /* VALOR */
 .valor {
     padding: 60px 0;
