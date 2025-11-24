@@ -77,10 +77,57 @@ body {
     font-weight: 500;
 }
 
+a {
+    text-decoration: none;
+    gap: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 8px;
+    color: #000;
+}
+
+a:hover {
+    background: var(--corDestaque);    
+}
+
 .hamburger {
     display: none;
     font-size: 26px;
     cursor: pointer;
+}
+
+/* Ocultar menu no mobile */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hambúrguer aparece apenas no mobile */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Menu padrão */
+.main-nav {
+    display: flex;
+    gap: 25px;
+}
+
+/* Botão hamburger */
+.btn-burger {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Ocultar menu por padrão */
+.main-nav {
+    display: flex;
+    gap: 20px;
 }
 
 /* HERO */
