@@ -1,7 +1,22 @@
 @charset "UTF-8";
 
-/* --- MEDIA QUERIES --- */
-@media (max-width: 900px) {
+/* Todas as demais mídias */ 
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768 até 992px
+Desktop: 992 até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@charset "UTF-8";
+
+/* BREAKPOINT MOBILE / TABLET ATÉ 900px */
+@media screen and (max-width: 900px) {
+
+    /* HERO E GRIDS */
     .hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -17,25 +32,63 @@
         grid-template-columns: 1fr;
     }
 
-    .menu {
-        display: none;
-        flex-direction: column;
+    /* MENU MOBILE:
+       - some por padrão
+       - aparece só quando tiver .open
+    */
+    .main-nav {
+        position: absolute;
+        top: 80px;
+        right: 20px;
         background: #f8e9d9;
         padding: 20px;
-        position: absolute;
-        top: 70px;
-        right: 15px;
-        width: 200px;
-        border-radius: 10px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.20);
+        display: none;             /* escondido sem .open */
+        flex-direction: column;
+        gap: 12px;
+        z-index: 50;
+        animation: fadeMenu 0.25s ease forwards;
     }
 
-    .menu a {
-        padding: 10px 0;
+    .main-nav.open {
+        display: flex !important;   /* mostra quando JS adiciona .open */
+    }
+
+    .main-nav a {
+        padding: 8px 4px;
         display: block;
     }
 
-    .hamburger {
+    /* botão hamburger aparece só no mobile */
+    .menu-btn {
         display: block;
+    }
+
+    @keyframes fadeMenu {
+        from {
+            opacity: 0;
+            transform: translateY(-8px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
+
+/* DESKTOP / TELAS MAIORES — garante que o botão some */
+@media screen and (min-width: 901px) {
+    .menu-btn {
+        display: none !important;
+    }
+
+    .main-nav {
+        display: flex !important;
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
 
