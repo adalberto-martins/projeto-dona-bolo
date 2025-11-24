@@ -51,6 +51,7 @@ body {
     width: 180px;   /* tamanho ideal para header */
     height: auto;
     display: block;
+    border-radius: 12px;
 }
 
 .menu {
